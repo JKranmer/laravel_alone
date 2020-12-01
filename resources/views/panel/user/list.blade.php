@@ -11,7 +11,7 @@
 				<th style="width: 20px">ID</th>
 				<th>Nome</th>
 				<th>E-mail</th>
-				<th>Tipo</th>
+				<th>Cargo</th>
 				<th>Superior</th>
 				<th>Ações</th>
 			</tr>
@@ -23,8 +23,8 @@
 					<td>{{$item->name}}</td>
 					<td>{{$item->email}}</td>
 					{{-- <td>{{$item->user->name}}</td> --}}
-					<td>--</td>
 					<td>{{$item->userType->desc}}</td>
+					<td>--</td>
 					<td>
 						@if ($item->deleted_at !=null)
 							<a href="/panel/user/enable/{{$item->id}}">Habilitar</a>
