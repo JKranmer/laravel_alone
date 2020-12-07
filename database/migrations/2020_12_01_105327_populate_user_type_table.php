@@ -24,7 +24,7 @@ class PopulateUserTypeTable extends Migration
      */
     public function down()
     {
-        DB::table('user_type')->where('id' , 1);
+        // DB::table('user_type')->where('id' , 1);
 
         // para varios
         // DB::table('user_type')->whereIn('id', ['1', '2' ...])

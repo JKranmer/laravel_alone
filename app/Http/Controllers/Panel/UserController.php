@@ -12,7 +12,7 @@ class UserController extends Controller{
 	
 	// Método Listar
 	function list() {
-		$user = UserModel::withTrashed()->with(['userType'])->get();
+		$user = UserModel::withTrashed()->with(['user'])->get();
 		// return $user;
 
 		$this->authorize('list-user');

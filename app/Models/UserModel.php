@@ -52,9 +52,6 @@ class UserModel extends Authenticatable
     protected function getUserTypeAttribute() {
         return UserTypeModel::find($this->attributes['user_type_id']);
     }
-    protected function getUserIdAttribute() {
-        return UserModel::find($this->attributes['user_id']);
-    }
 
     public function userType(){
         return $this->hasOne('App\Models\UserTypeModel', 'id', 'user_type_id');
